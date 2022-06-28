@@ -1,0 +1,16 @@
+header {
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    & div {
+        width: 180px;
+    }
+    & img {
+        width: 180px;
+    }
+    & a {
+        position: relative;
+        right: 50px;
+    }
+}

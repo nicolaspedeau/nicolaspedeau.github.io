@@ -1,0 +1,24 @@
+.toppage {
+    width: auto;
+    height: 300px;
+    background-color: $background-primary;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &-location {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: darken($color: $background-primary, $amount: 5%);
+    }
+    & h1 {
+        font-size: map-get($font-size, h1);
+        width: 250px;
+        text-align: center;
+    }
+    & p {
+        width: 250px;
+        text-align: center;
+    }
+}

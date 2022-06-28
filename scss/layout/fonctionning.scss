@@ -1,0 +1,38 @@
+.fonctionning {
+    width: auto;
+    height: 300px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    padding-bottom: $padding-bottom;
+    &-block {
+        width: 290px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &-num {
+        font-size: 8px;
+        padding: 4px 6px 4px 6px;
+        background-color: $color-primary;
+        border-radius: 100%;
+        position: relative;
+        left: 10px;
+        color: white;
+        z-index: 1;
+    }
+    &-div {
+        width: 384px;
+        padding: 6px;
+        display: flex;
+        align-items: center;
+        background-color: #F2F2F2;
+        border-radius: 10px;
+        @include block-shadow;
+        & i {
+            padding: 0 20px;
+        }
+    }
+}

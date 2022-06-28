@@ -1,0 +1,15 @@
+body {
+    font-family: "Roboto", serif;
+}
+
+p {
+    font-size: map-get($font-size, p);
+}
+
+h2 {
+    margin-right: 60px;
+}
+
+a {
+    text-decoration: none;
+}

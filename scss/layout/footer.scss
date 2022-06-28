@@ -1,0 +1,23 @@
+.footer {
+    display: flex;
+    justify-content: center;
+    background-color: darken($color: $background-primary, $amount: 70%);
+    color: white;
+    padding: 20px 0 40px 0;
+    & a {
+        color: white;
+    }
+    &-block {
+        width: 280px;
+        height: 160px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    &-logo {
+        & img {
+            width: 100px;
+            filter: invert(1);
+        }
+    }
+}

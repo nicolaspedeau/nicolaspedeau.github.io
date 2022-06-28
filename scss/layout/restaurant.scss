@@ -1,0 +1,47 @@
+.restaurant {
+    width: auto;
+    height: 1050px;
+    padding-bottom: $padding-bottom;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    background-color: $background-primary;
+    &-block {
+        @include block-shadow;
+    }
+    & h2 {
+        margin-right: 130px;
+        height: 0px;
+    }
+    &-img {
+        height: 150px;
+    }
+    & img {
+        width: 280px;
+        height: 150px;
+        object-fit: cover;
+        object-position: 100% 65%;
+        border-radius: 10px 10px 0 0;
+    }
+    &-new {
+        width: 60px;
+        font-size: 14px;
+        background-color: $color-tertiary;
+        padding: 7px 10px 7px 10px;
+        border-radius: 5px;
+        position: relative;
+        bottom: 140px;
+        left: 188px;
+    }
+    &-text {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 280px;
+        background-color: lighten($color: $background-primary, $amount: 5%);
+        height: 74px;
+        line-height: 6px;
+        border-radius: 0 0 10px 10px;
+    }
+}
