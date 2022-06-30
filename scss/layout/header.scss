@@ -3,11 +3,14 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    background: white;
+    filter: drop-shadow(0 3px 5px darken($color: $background-primary, $amount: 40%));
     & div {
         width: 180px;
     }
     & img {
         width: 180px;
+        padding: 20px 0 20px 0;
     }
     & a {
         position: relative;

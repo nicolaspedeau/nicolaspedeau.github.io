@@ -5,6 +5,9 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Shrikhand" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css" integrity="sha384-zIaWifL2YFF1qaDiAo0JFgsmasocJ/rqu7LKYH8CoBEXqGbb9eO+Xi3s6fQhgFWM" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/9938dc10d2.js" crossorigin="anonymous"></script>
     <!---necessary to use font awesome-->
@@ -19,94 +22,97 @@
             <img class="logo" src="images/logo/ohmyfood.png" alt="logo">
         </div>
     </header>
-    <main>
-        <div class="topimg">
+    <main class="side">
+        <div class="side-topimg">
             <img src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="alafrancaise">
         </div>
-        <div>
-            <h1>A la francaise</h1>
-        </div>
-        <article class="firstcourse">
+        <section class="menu">
             <div>
-                <h2>Entrées</h2>
+                <h1>A la francaise</h1>
             </div>
-            <div>
-                <h3>Tartare de poulpe acidulé</h3>
-                <div class="price">
-                    <p>Aux zestes d'oranges</p>
-                    <p>25€</p>
+            <article class="menu-block">
+                <div>
+                    <h2>Entrées</h2>
                 </div>
-            </div>
-            <div>
-                <h3>Velouté de légumes d'antan</h3>
-                <div class="price">
-                    <p>Carottes, panais, topinambour</p>
-                    <p>35€</p>
+                <div class="menu-dish">
+                    <h3>Tartare de poulpe acidulé</h3>
+                    <div class="menu-price">
+                        <p>Aux zestes d'oranges</p>
+                        <p>25€</p>
+                    </div>
                 </div>
-            </div>
-            <div>
-                <h3>Soupe à l'oignon</h3>
-                <div class="price">
-                    <p>Revisitée</p>
-                    <p>20€</p>
+                <div class="menu-dish">
+                    <h3>Velouté de légumes d'antan</h3>
+                    <div class="menu-price">
+                        <p>Carottes, panais, topinambour</p>
+                        <p>35€</p>
+                    </div>
                 </div>
-            </div>
-        </article>
-        <article class="plate">
-            <div>
-                <h2>Plats</h2>
-            </div>
-            <div>
-                <h3>Coquilles Saint-Jacques</h3>
-                <div class="price">
-                    <p>Accompagnées d'une purée de panais</p>
-                    <p>40€</p>
+                <div class="menu-dish">
+                    <h3>Soupe à l'oignon</h3>
+                    <div class="menu-price">
+                        <p>Revisitée</p>
+                        <p>20€</p>
+                    </div>
                 </div>
-            </div>
-            <div>
-                <h3>Magret de canard</h3>
-                <div class="price">
-                    <p>Et parmentier de pommes de terre</p>
-                    <p>35€</p>
+            </article>
+            <article class="menu-block">
+                <div>
+                    <h2>Plats</h2>
                 </div>
-            </div>
-            <div>
-                <h3>Pigeonnau d'Ille-et-Villaine</h3>
-                <div class="price">
-                    <p>Sur son lit de gnocchis aux légumes</p>
-                    <p>44€</p>
+                <div class="menu-dish">
+                    <h3>Coquilles Saint-Jacques</h3>
+                    <div class="menu-price">
+                        <p>Accompagnées d'une purée de panais</p>
+                        <p>40€</p>
+                    </div>
                 </div>
-            </div>
-        </article>
-        <article class="dessert">
-            <div>
-                <h2>Desserts</h2>
-            </div>
-            <div>
-                <h3>Pétales de violletes glacés</h3>
-                <div class="price">
-                    <p>Et purée de noisette</p>
-                    <p>18€</p>
+                <div class="menu-dish">
+                    <h3>Magret de canard</h3>
+                    <div class="menu-price">
+                        <p>Et parmentier de pommes de terre</p>
+                        <p>35€</p>
+                    </div>
                 </div>
-            </div>
-            <div>
-                <h3>Fondant au chocolat</h3>
-                <div class="price">
-                    <p>Revisité</p>
-                    <p>22€</p>
+                <div class="menu-dish">
+                    <h3>Pigeonnau d'Ille-et-Villaine</h3>
+                    <div class="menu-price">
+                        <p>Sur son lit de gnocchis aux légumes</p>
+                        <p>44€</p>
+                    </div>
                 </div>
-            </div>
-            <div>
-                <h3>Millefeuille croustillant</h3>
-                <div class="price">
-                    <p>Myrtilles et pâte d'amande</p>
-                    <p>23€</p>
+            </article>
+            <article class="menu-block">
+                <div>
+                    <h2>Desserts</h2>
                 </div>
-            </div>
-            <div>
-                Commander
-            </div>
-        </article>
+                <div class="menu-dish">
+                    <h3>Pétales de violletes glacés</h3>
+                    <div class="menu-price">
+                        <p>Et purée de noisette</p>
+                        <p>18€</p>
+                    </div>
+                </div>
+                <div class="menu-dish">
+                    <h3>Fondant au chocolat</h3>
+                    <div class="menu-price">
+                        <p>Revisité</p>
+                        <p>22€</p>
+                    </div>
+                </div>
+                <div class="menu-dish">
+                    <h3>Millefeuille croustillant</h3>
+                    <div class="menu-price">
+                        <p>Myrtilles et pâte d'amande</p>
+                        <p>23€</p>
+                    </div>
+                </div>
+                <button class="btn">
+                    Commander
+                    <div class="btn-on"></div>
+                </button>
+            </article>
+        </section>
         <div></div>
     </main>
     <footer class="footer">
@@ -130,7 +136,6 @@
             </div>
         </div>
     </footer>
-    </div>
 </body>
 
 </html>

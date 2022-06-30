@@ -4,6 +4,10 @@
 
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Shrikhand" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css" integrity="sha384-zIaWifL2YFF1qaDiAo0JFgsmasocJ/rqu7LKYH8CoBEXqGbb9eO+Xi3s6fQhgFWM" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/9938dc10d2.js" crossorigin="anonymous"></script>
     <!---necessary to use font awesome-->
@@ -18,118 +22,124 @@
             <img class="logo" src="images/logo/ohmyfood.png" alt="logo">
         </div>
     </header>
-    <main>
-        <div>
+    <main class="side">
+        <div class="side-topimg">
             <img src="images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="noteenchantee">
         </div>
-        <div>
-            <h1>La note enchantée</h1>
-        </div>
-        <article>
+        <section class="menu">
             <div>
-                <h2>Entrées</h2>
+                <h1>La note enchantée</h1>
             </div>
-            <div>
-                <h3>Ravioles de foie gras</h3>
+            <article class="menu-block">
                 <div>
-                    <p>Accompagnées de leur crème à la truffe</p>
-                    <p>25€</p>
+                    <h2>Entrées</h2>
                 </div>
-            </div>
-            <div>
-                <h3>Caviar osciètre</h3>
+                <div class="menu-dish">
+                    <h3>Ravioles de foie gras</h3>
+                    <div class="menu-price">
+                        <p>Accompagnées de leur crème à la truffe</p>
+                        <p>25€</p>
+                    </div>
+                </div>
+                <div class="menu-dish">
+                    <h3>Caviar osciètre</h3>
+                    <div class="menu-price">
+                        <p>Sur blini à la farine de blé noir</p>
+                        <p>35€</p>
+                    </div>
+                </div>
+                <div class="menu-dish">
+                    <h3>Homar et espuma de pommes de terre</h3>
+                    <div class="menu-price">
+                        <p>Mariné aux zestes d'orange</p>
+                        <p>20€</p>
+                    </div>
+                </div>
+                <div class="menu-dish">
+                    <h3>Foie gras de canard cuit entier</h3>
+                    <div class="menu-price">
+                        <p>Confiture de figue et pain toasté</p>
+                        <p>35€</p>
+                    </div>
+                </div>
+            </article>
+            <article class="menu-block">
                 <div>
-                    <p>Sur blini à la farine de blé noir</p>
-                    <p>35€</p>
+                    <h2>Plats</h2>
                 </div>
-            </div>
-            <div>
-                <h3>Homar et espuma de...</h3>
+                <div class="menu-dish">
+                    <h3>Noix de coquilles Saint-Jacques</h3>
+                    <div class="menu-price">
+                        <p>Sur lit de purée céleri-rave</p>
+                        <p>40€</p>
+                    </div>
+                </div>
+                <div class="menu-dish">
+                    <h3>Langoustine poêlé</h3>
+                    <div class="menu-price">
+                        <p>Purée de patate douce</p>
+                        <p>35€</p>
+                    </div>
+                </div>
+                <div class="menu-dish">
+                    <h3>Mijoté de queue de boeuf</h3>
+                    <div class="menu-price">
+                        <p>Et riz sauvage aux zestes de citron</p>
+                        <p>44€</p>
+                    </div>
+                </div>
+            </article>
+            <article class="menu-block">
                 <div>
-                    <p>Mariné aux zestes d'orange</p>
-                    <p>20€</p>
+                    <h2>Desserts</h2>
                 </div>
-            </div>
-            <div>
-                <h3>Foie gras de canard cuit entier</h3>
-                <div>
-                    <p>Confiture de figue et pain toasté</p>
-                    <p>35€</p>
+                <div class="menu-dish">
+                    <h3>Macaron noisette et chocolat</h3>
+                    <div class="menu-price">
+                        <p>Glace au caramel brun et sel de guérande</p>
+                        <p>18€</p>
+                    </div>
                 </div>
-            </div>
-        </article>
-        <article>
-            <div>
-                <h2>Plats</h2>
-            </div>
-            <div>
-                <h3>Noix de coquilles Saint-Jacques</h3>
-                <div>
-                    <p>Sur lit de purée céleri-rave</p>
-                    <p>40€</p>
+                <div class="menu-dish">
+                    <h3>Baba au rhum révisité</h3>
+                    <div class="menu-price">
+                        <p>Avec son coulis de citron</p>
+                        <p>22€</p>
+                    </div>
                 </div>
-            </div>
-            <div>
-                <h3>Langoustine poêlé</h3>
-                <div>
-                    <p>Purée de patate douce</p>
-                    <p>35€</p>
+                <div class="menu-dish">
+                    <h3>Tarte au citron meringuée</h3>
+                    <div class="menu-price">
+                        <p>Destructurée</p>
+                        <p>23€</p>
+                    </div>
                 </div>
-            </div>
-            <div>
-                <h3>Mijoté de queue de boeuf</h3>
-                <div>
-                    <p>Et riz sauvage aux zestes de citron</p>
-                    <p>44€</p>
-                </div>
-            </div>
-        </article>
-        <article>
-            <div>
-                <h2>Desserts</h2>
-            </div>
-            <div>
-                <h3>Macaron noisette et chocolat</h3>
-                <div>
-                    <p>Glace au caramel brun et sel de guérande</p>
-                    <p>18€</p>
-                </div>
-            </div>
-            <div>
-                <h3>Baba au rhum révisité</h3>
-                <div>
-                    <p>Avec son coulis de citron</p>
-                    <p>22€</p>
-                </div>
-            </div>
-            <div>
-                <h3>Tarte au citron meringuée</h3>
-                <div>
-                    <p>Destructurée</p>
-                    <p>23€</p>
-                </div>
-            </div>
-            <div>
-                Commander
-            </div>
+                <button class="btn">
+                    Commander
+                    <div class="btn-on"></div>
+                </button>
+            </article>
+        </section>
     </main>
-    <footer>
-        <div>
-            <img src="images/logo/ohmyfood.png" alt="logofooter">
-        </div>
-        <div>
-            <i class="fa-solid fa-utensils"></i>
-            <a href="">Proposer un restaurant</a>
-        </div>
-        <div>
-            <i class="fa-solid fa-handshake-angle"></i>
-            <a href="">Devenir partenaires</a>
-        </div>
-        <div>
-            <a href="Mentions légales"></a>
-        </div>
-        <div>
-            <a href="">Contact</a>
+    <footer class="footer">
+        <div class="footer-block">
+            <div class="footer-logo">
+                <img src="images/logo/ohmyfood@2x.svg" alt="logofooter">
+            </div>
+            <div>
+                <i class="fa-solid fa-utensils"></i>
+                <a href="">Proposer un restaurant</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-handshake-angle"></i>
+                <a href="">Devenir partenaires</a>
+            </div>
+            <div>
+                <a href="">Mentions légales</a>
+            </div>
+            <div>
+                <a href="">Contact</a>
+            </div>
         </div>
     </footer>
 </body>

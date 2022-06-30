@@ -23,6 +23,12 @@
         color: white;
         z-index: 1;
     }
+    &-i {
+        padding: 0 20px;
+        &__violet {
+            color: $color-primary;
+        }
+    }
     &-div {
         width: 384px;
         padding: 6px;
@@ -31,8 +37,15 @@
         background-color: #F2F2F2;
         border-radius: 10px;
         @include block-shadow;
-        & i {
-            padding: 0 20px;
+        & p {
+            font-weight: bold;
+        }
+        &__violet {
+            background: lighten($color: $color-primary, $amount: 35%);
+        }
+        &:hover {
+            background: lighten($color: $color-primary, $amount: 35%);
+            color: $color-primary;
         }
     }
 }

@@ -1,0 +1,32 @@
+@mixin btnheart {
+    background-color: lighten($color: $background-primary, $amount: 5%);
+    height: 74px;
+    line-height: 6px;
+    border-radius: 0 0 10px 10px;
+    position: relative;
+    &__off {
+        font-size: 30px;
+        position: absolute;
+        right: 20px;
+    }
+    &__on {
+        right: 18px;
+        position: absolute;
+        font-size: 34px;
+        opacity: 0;
+        &:hover {
+            opacity: 1;
+            background: $btn-gradient;
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            transition-delay: 100ms;
+            transition-duration: 300ms;
+            transform: translatez(34px);
+        }
+    }
+}
+
+.btnheart {
+    @include btnheart()
+}

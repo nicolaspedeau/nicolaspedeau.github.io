@@ -1,7 +1,29 @@
-button {
+.btn {
     border: none;
-    background: linear-gradient($color-secondary, $color-primary);
+    background: $btn-gradient;
     color: white;
     padding: 15px 25px 15px 25px;
     border-radius: 25px;
+    margin: 25px;
+    filter: drop-shadow(0px 2px 4px darken($color: $background-primary, $amount: 30%));
+    position: relative;
+    z-index: 1;
+    &:hover {
+        & .btn-on {
+            opacity: 1;
+        }
+    }
+    &-on {
+        position: absolute;
+        border-radius: 25px;
+        background: linear-gradient(lighten($color-secondary, 8%), lighten($color-primary, 8%));
+        opacity: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: -1;
+        transition: opacity 250ms;
+        filter: drop-shadow(0px 3px 3px darken($color: $background-primary, $amount: 45%));
+    }
 }
