@@ -1,10 +1,14 @@
 .btn {
+    width: 240px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border: none;
     background: $btn-gradient;
     color: white;
     padding: 15px 25px 15px 25px;
     border-radius: 25px;
-    margin: 25px;
+    margin: 25px 25px 25px 40px;
     filter: drop-shadow(0px 2px 4px darken($color: $background-primary, $amount: 30%));
     position: relative;
     z-index: 1;
