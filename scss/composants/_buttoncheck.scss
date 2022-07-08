@@ -1,0 +1,69 @@
+@mixin menu-dish {
+    display: block;
+    background-color: #FFFFFF;
+    display: flex;
+    padding: 10px;
+    border-radius: 10px;
+    @include block-shadow;
+    overflow: hidden;
+    cursor: pointer;
+    max-width: 100%;
+    height: 60px;
+    &__header {
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        flex: 1;
+        & h3 {
+            margin: 0;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+        }
+        & p {
+            margin: 0;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+        }
+    }
+    &__price {
+        font-weight: bold;
+        color: #666;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        padding-left: 10px;
+    }
+    &__confirmation {
+        background-color: #99E2D0;
+        margin: -10px -80px -10px 14px;
+        width: 70px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition-duration: 0.5s;
+    }
+    &:hover &__confirmation {
+        margin-right: -10px;
+    }
+    &__add {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    &__icon {
+        font-size: 30px;
+        color: #FFFFFF;
+    }
+    &:hover &__icon {
+        transform: rotate(360deg);
+        transition-duration: 600ms;
+        font-size: 30px;
+        color: #FFFFFF;
+    }
+}
+
+.menu-dish {
+    @include menu-dish()
+}

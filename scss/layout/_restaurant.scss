@@ -1,14 +1,53 @@
 .restaurant {
     width: auto;
-    height: 1050px;
+    height: 1070px;
     padding-bottom: $padding-bottom;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
     align-items: center;
     background-color: $background-primary;
+    @include desktop-only {
+        width: auto;
+        height: 400px;
+        align-items: flex-start;
+        padding: 10px;
+    }
+    @include tablet-only {
+        height: 630px;
+    }
     &-block {
+        height: 970px;
+        padding-bottom: $padding-bottom;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+        @include desktop-only {
+            width: 100%;
+            flex-direction: row
+        }
+        @include tablet-only {
+            flex-direction: row;
+            width: 630px;
+        }
+    }
+    &-duo {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 470px;
+        @include desktop-only {
+            flex-direction: row;
+            width: 570px;
+        }
+    }
+    &-article {
         @include block-shadow;
+        @include desktop-only {
+            margin: 10px;
+            width: 220px;
+        }
     }
     &-card {
         display: flex;
@@ -19,6 +58,9 @@
     & h2 {
         margin-right: 130px;
         height: 0px;
+        @include tablet-only {
+            margin-right: 450px;
+        }
     }
     &-img {
         height: 150px;
@@ -29,6 +71,9 @@
         object-fit: cover;
         object-position: 100% 65%;
         border-radius: 10px 10px 0 0;
+        @include desktop-only {
+            width: 220px;
+        }
     }
     &-new {
         width: 60px;
@@ -39,6 +84,9 @@
         position: relative;
         bottom: 140px;
         left: 188px;
+        @include desktop-only {
+            left: 130px;
+        }
     }
     &-text {
         display: flex;

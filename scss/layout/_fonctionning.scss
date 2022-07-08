@@ -1,17 +1,54 @@
 .fonctionning {
     width: auto;
-    height: 300px;
+    height: 350px;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
     align-items: center;
     margin: 10px;
     padding-bottom: $padding-bottom;
+    @include desktop-only {
+        align-items: flex-start;
+        height: 160px;
+        padding-bottom: 0;
+    }
+    @include tablet-only {
+        align-items: flex-start;
+        height: 160px;
+        padding-bottom: 0;
+    }
     &-block {
+        height: 300px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+        margin: 10px;
+        padding-bottom: $padding-bottom;
+        @include desktop-only {
+            flex-direction: row;
+            width: 100%;
+            height: 100px;
+            justify-content: flex-start;
+        }
+        @include tablet-only {
+            flex-direction: row;
+            width: 100%;
+            height: 100px;
+            justify-content: flex-start;
+        }
+    }
+    &-filter {
         width: 290px;
         display: flex;
         justify-content: space-between;
         align-items: center;
+        @include desktop-only {
+            margin-right: 30px;
+        }
+        @include tablet-only {
+            margin-right: 30px;
+        }
     }
     &-num {
         font-size: 8px;
@@ -46,6 +83,9 @@
         &:hover {
             background: lighten($color: $color-primary, $amount: 35%);
             color: $color-primary;
+        }
+        @include tablet-only {
+            width: 170px;
         }
     }
 }

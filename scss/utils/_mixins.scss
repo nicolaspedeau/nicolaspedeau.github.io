@@ -1,3 +1,15 @@
 @mixin block-shadow {
     filter: drop-shadow(2px 2px 6px #d9d9d9);
 }
+
+@mixin desktop-only {
+    @media screen and (min-width: map-get($map: $breakpoint, $key: desktop)) {
+        @content;
+    }
+}
+
+@mixin tablet-only {
+    @media (max-width: map-get($map: $breakpoint, $key: tablet2)) and (min-width: map-get($map: $breakpoint, $key: tablet1)) {
+        @content;
+    }
+}
