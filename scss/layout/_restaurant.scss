@@ -25,7 +25,8 @@
         align-items: center;
         @include desktop-only {
             width: 100%;
-            flex-direction: row
+            flex-direction: row;
+            justify-content: flex-start;
         }
         @include tablet-only {
             flex-direction: row;
@@ -39,13 +40,15 @@
         height: 470px;
         @include desktop-only {
             flex-direction: row;
-            width: 570px;
+            width: 490px;
+            justify-content: flex-start
         }
     }
     &-article {
         @include block-shadow;
         @include desktop-only {
-            margin: 10px;
+            margin-top: 20px;
+            margin-right: 25px;
             width: 220px;
         }
     }

@@ -235,6 +235,7 @@ header a {
   .restaurant-block {
     width: 100%;
     flex-direction: row;
+    justify-content: flex-start;
   }
 }
 @media (max-width: 991px) and (min-width: 768px) {
@@ -252,7 +253,8 @@ header a {
 @media screen and (min-width: 992px) {
   .restaurant-duo {
     flex-direction: row;
-    width: 570px;
+    width: 490px;
+    justify-content: flex-start;
   }
 }
 .restaurant-article {
@@ -260,7 +262,8 @@ header a {
 }
 @media screen and (min-width: 992px) {
   .restaurant-article {
-    margin: 10px;
+    margin-top: 20px;
+    margin-right: 25px;
     width: 220px;
   }
 }
