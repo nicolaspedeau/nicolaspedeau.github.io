@@ -44,6 +44,9 @@
         @include desktop-only {
             justify-content: center;
         }
+        @include tablet-only {
+            justify-content: center;
+        }
         & h1 {
             font-family: "Shrikhand", serif;
             font-size: 25px;

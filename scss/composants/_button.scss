@@ -12,6 +12,7 @@
     filter: drop-shadow(0px 2px 4px darken($color: $background-primary, $amount: 30%));
     position: relative;
     z-index: 1;
+    cursor: pointer;
     &__position {
         @include desktop-only {
             display: flex;
@@ -20,10 +21,12 @@
     }
     &:hover {
         & .btn-on {
+            cursor: pointer;
             opacity: 1;
         }
     }
     &-on {
+        cursor: pointer;
         position: absolute;
         border-radius: 25px;
         background: linear-gradient(lighten($color-secondary, 8%), lighten($color-primary, 8%));

@@ -400,6 +400,7 @@ header a {
   filter: drop-shadow(0px 2px 4px #a6a6a6);
   position: relative;
   z-index: 1;
+  cursor: pointer;
 }
 @media screen and (min-width: 992px) {
   .btn__position {
@@ -408,9 +409,11 @@ header a {
   }
 }
 .btn:hover .btn-on {
+  cursor: pointer;
   opacity: 1;
 }
 .btn-on {
+  cursor: pointer;
   position: absolute;
   border-radius: 25px;
   background: linear-gradient(#ffa2e5, #a978e3);
@@ -478,6 +481,11 @@ main {
   align-items: center;
 }
 @media screen and (min-width: 992px) {
+  .menu-h1 {
+    justify-content: center;
+  }
+}
+@media (max-width: 991px) and (min-width: 768px) {
   .menu-h1 {
     justify-content: center;
   }
@@ -558,12 +566,14 @@ main {
   font-size: 30px;
   position: absolute;
   right: 20px;
+  cursor: pointer;
 }
 .btnheart__on {
   right: 18px;
   position: absolute;
   font-size: 34px;
   opacity: 0;
+  cursor: pointer;
 }
 .btnheart__on:hover {
   opacity: 1;
@@ -574,6 +584,7 @@ main {
   transition-delay: 100ms;
   transition-duration: 300ms;
   transform: translatez(34px);
+  cursor: pointer;
 }
 
 body .loaded-page {

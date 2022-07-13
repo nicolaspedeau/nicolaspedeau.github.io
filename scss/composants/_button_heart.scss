@@ -8,12 +8,14 @@
         font-size: 30px;
         position: absolute;
         right: 20px;
+        cursor: pointer;
     }
     &__on {
         right: 18px;
         position: absolute;
         font-size: 34px;
         opacity: 0;
+        cursor: pointer;
         &:hover {
             opacity: 1;
             background: $btn-gradient;
@@ -23,6 +25,7 @@
             transition-delay: 100ms;
             transition-duration: 300ms;
             transform: translatez(34px);
+            cursor: pointer;
         }
     }
 }
