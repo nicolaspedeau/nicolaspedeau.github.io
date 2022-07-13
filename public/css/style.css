@@ -497,6 +497,7 @@ main {
 .menu h3 {
   margin: 0;
   font-size: 17px;
+  line-height: 30px;
 }
 .menu-block {
   display: flex;
