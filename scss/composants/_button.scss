@@ -18,6 +18,10 @@
             display: flex;
             justify-content: flex-end;
         }
+        @include tablet-only {
+            display: flex;
+            justify-content: center;
+        }
     }
     &:hover {
         & .btn-on {

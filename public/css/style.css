@@ -408,6 +408,12 @@ header a {
     justify-content: flex-end;
   }
 }
+@media (max-width: 991px) and (min-width: 768px) {
+  .btn__position {
+    display: flex;
+    justify-content: center;
+  }
+}
 .btn:hover .btn-on {
   cursor: pointer;
   opacity: 1;
