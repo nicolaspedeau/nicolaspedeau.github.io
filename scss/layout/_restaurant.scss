@@ -87,6 +87,8 @@
         position: relative;
         bottom: 140px;
         left: 188px;
+        color: darken($color: $color-tertiary, $amount: 50%);
+        font-weight: bold;
         @include desktop-only {
             left: 130px;
         }

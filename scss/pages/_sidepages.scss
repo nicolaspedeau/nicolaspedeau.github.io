@@ -65,7 +65,7 @@
         max-height: 450px;
         margin: 12px 12px 0 12px;
         @include desktop-only {
-            width: 400px;
+            width: 305px;
             height: 350px;
         }
     }
@@ -92,6 +92,9 @@
     &-dessert {
         animation: slidebottom 1.5s 1000ms, apparence 2.5s;
     }
+    & .btn__position {
+        animation: slidebottom 1.5s 1500ms, apparence 4s;
+    }
 }
 
 @keyframes slidebottom {
@@ -113,4 +116,8 @@
     to {
         opacity: 1;
     }
+}
+
+.space {
+    height: 30px;
 }

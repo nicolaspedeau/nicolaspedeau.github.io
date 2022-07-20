@@ -7,10 +7,12 @@
     @include desktop-only {
         width: auto;
         justify-content: flex-start;
+        height: 300px;
     }
     @include tablet-only {
         width: auto;
         justify-content: flex-start;
+        height: 300px;
     }
     & a {
         color: white;

@@ -1,5 +1,5 @@
 .btn {
-    width: 240px;
+    width: 190px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -14,13 +14,11 @@
     z-index: 1;
     cursor: pointer;
     &__position {
+        position: relative;
+        display: flex;
+        justify-content: center;
         @include desktop-only {
-            display: flex;
             justify-content: flex-end;
-        }
-        @include tablet-only {
-            display: flex;
-            justify-content: center;
         }
     }
     &:hover {

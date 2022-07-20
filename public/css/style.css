@@ -306,6 +306,8 @@ header a {
   position: relative;
   bottom: 140px;
   left: 188px;
+  color: #1b6150;
+  font-weight: bold;
 }
 @media screen and (min-width: 992px) {
   .restaurant-new {
@@ -341,12 +343,14 @@ header a {
   .footer {
     width: auto;
     justify-content: flex-start;
+    height: 300px;
   }
 }
 @media (max-width: 991px) and (min-width: 768px) {
   .footer {
     width: auto;
     justify-content: flex-start;
+    height: 300px;
   }
 }
 .footer a {
@@ -387,7 +391,7 @@ header a {
 }
 
 .btn {
-  width: 240px;
+  width: 190px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -402,16 +406,14 @@ header a {
   z-index: 1;
   cursor: pointer;
 }
+.btn__position {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
 @media screen and (min-width: 992px) {
   .btn__position {
-    display: flex;
     justify-content: flex-end;
-  }
-}
-@media (max-width: 991px) and (min-width: 768px) {
-  .btn__position {
-    display: flex;
-    justify-content: center;
   }
 }
 .btn:hover .btn-on {
@@ -515,7 +517,7 @@ main {
 }
 @media screen and (min-width: 992px) {
   .menu-block {
-    width: 400px;
+    width: 305px;
     height: 350px;
   }
 }
@@ -542,6 +544,9 @@ main {
 .menu-dessert {
   animation: slidebottom 1.5s 1000ms, apparence 2.5s;
 }
+.menu .btn__position {
+  animation: slidebottom 1.5s 1500ms, apparence 4s;
+}
 
 @keyframes slidebottom {
   from {
@@ -562,6 +567,10 @@ main {
     opacity: 1;
   }
 }
+.space {
+  height: 30px;
+}
+
 .btnheart {
   background-color: white;
   height: 74px;
